@@ -1,0 +1,9 @@
+include CHANGES.rst
+include CONTRIBUTING.rst
+include LICENSE.rst
+include pyproject.toml
+include poetry.lock
+graft docs
+prune docs/_build
+graft example
+global-exclude *.pyc

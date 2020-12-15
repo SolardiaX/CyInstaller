@@ -1,0 +1,37 @@
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+[tool.poetry]
+name = "CyInstaller"
+version = "1.0.dev1"
+description = "A cli tool to package application with Cython & PyInstaller."
+authors = ["SolardiaX Chen <solardiax@hotmail.com>"]
+license = "BSD-3-Clause"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.1.2"
+Cython = "^0.29.21"
+pyinstaller = "^4.1"
+PyYAML = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+bcrypt = "^3.2.0"
+cryptography = "^3.2.1"
+email-validator = "^1.1.2"
+flask = "^1.1.2"
+flask-security-too = "^3.4.4"
+pony = "^0.7.14"
+waitress = "^1.4.4"
+python-dotenv = "^0.15.0"
+packaging = "^20.7"
+sphinx = "^3.3.1"
+sphinx-issues = "^1.2.0"
+sphinx-material = "^0.0.32"
+sphinxcontrib-log-cabinet = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools", "wheel"]
+build-backend = "poetry.core.masonry.api"
