@@ -1,0 +1,24 @@
+div.twocol {
+    display: flex;
+}
+
+div.leftside {
+    float: left;
+}
+
+div.rightside {
+    float: right;
+    margin-left: 42px;
+}
+
+.md-nav a.caption {
+    font-weight: 700;
+}
+
+.md-typeset .md-typeset__table {
+    width: 100%;
+}
+
+.md-nav.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link {
+    font-weight: 700;
+}
