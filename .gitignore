@@ -18,5 +18,5 @@ example/logs/
 
 # Sphinx documentation
 docs/_build/
-.idea/vcs.xml
+.idea/
 test/
