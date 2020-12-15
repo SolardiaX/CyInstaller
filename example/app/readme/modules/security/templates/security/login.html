@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CyInstaller Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}"/>
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/login.css') }}">
+</head>
+<body>
+<div class="limiter">
+    <div class="container-login">
+        <div class="wrap-login">
+            <div class="login-form-title">
+                <span class="login-form-title-1">CyInstaller Readme</span>
+            </div>
+            <form class="login-form validate-form" action="{{ url_for('security.login') }}" method="post">
+                <div class="wrap-input validate-input" data-validate="Username is required">
+                    <label class="label-input" for="username">{{ login_form.username.name }}</label>
+                    {{ login_form.username(class='input', placeholder='Enter username', autocomplete='off') }}
+                    <span class="focus-input"></span>
+                </div>
+                <div class="wrap-input validate-input" data-validate="Password is required">
+                    <label class="label-input" for="username">{{ login_form.password.name }}</label>
+                    {{ login_form.password(class='input', placeholder='Enter password', autocomplete='off') }}
+                    <span class="focus-input"></span>
+                </div>
+                {{ login_form.hidden_tag() }}
+                {% if login_form.username.errors %}
+                    <div class="login-error">
+                        {% for error in login_form.username.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if login_form.password.errors %}
+                    <div class="login-error">
+                        {% for error in login_form.password.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <div class="container-login-form-btn">
+                    <button class="login-form-btn">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='javascripts/login.js') }}"></script>
+</body>
+</html>

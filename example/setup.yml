@@ -1,0 +1,58 @@
+setup:
+  name: CyInstallerApp          # the name of Application, can be used as packaged app name
+  root: .                       # the working root path for CyInstaller, default is current path
+  modules:                      # the modules list to compile and package
+    - base: app                 # the base path of module related to `setup.root`, path will be igonred in stage's output
+      package: readme           # the base package name of module, this will to used to detect cython output
+      package_from_base: false  # if false the module's cython output will base from `package` not `base`
+      compiles:                 # the module's source files for cython to compile, `!` means exclude
+        - "**/*.py"
+        - "!**/__init__.py"
+      packages:                 # the module's source files for pyinstaller to package, `!` means exclude
+      binaries:                 # the module's biary files for pyinstaller to package, `!` means exclude
+      datas:                    # the module's data files for pyinstaller to package, `!` means exclude
+        - "readme::static"
+        - "readme::**/__init__.py"
+        - "readme::**/templates"
+      relates:                  # the module's related files to distribute seperated with packaged app, `!` means exclude
+  compiles:                     # the source files for cython to compile, `!` means exclude
+  packages:                     # the source files for pyinstaller to package, `!` means exclude
+  datas:                        # the data files for pyinstaller to package, `!` means exclude
+    - "../docs/_build/::*.html->readme/modules/main/templates/main"
+    - "../docs/_build/::*.js->readme/static"
+    - "../docs/_build/_static::**/*.*->readme/static"
+  relates:                      # the related files to distribute seperated with packaged app, `!` means exclude
+    - config.json
+    - logging.cfg.yml
+    - database.db
+  cython_binaries: true         # automate use cython compile results as pyinstaller binaries
+  hiddenimports:                # the hidden imports for pyinstaller
+    - "cryptography"
+    - "passlib.handlers"
+    - "passlib.handlers.bcrypt"
+    - "passlib.handlers.des_crypt"
+    - "passlib.handlers.pbkdf2"
+    - "passlib.handlers.sha2_crypt"
+    - "passlib.handlers.misc"
+    - "passlib.handlers.digests"
+    - "pony.orm.dbproviders"
+    - "pony.orm.dbproviders.sqlite"
+  auto_hiddenimports: true      # parse all source files to build hiddenimports
+  entrypoint: "app::server.py"  # the entrypoint script of the application
+
+  stage:
+    path: _build                # the related path of current path to store stage temporary files
+    debug: true                 # enable or disable debug, if true all prcoess files will remained for debug
+    cython:
+      path: cython              # the cython output path related to `stage.path`
+      path_tmp: compile         # the cython temporary files path related to `stage.path`
+      options:                  # the options use to execute cython compile
+        compiler_directives:
+            always_allow_keywords: true
+        nthreads: 1
+        language_level: 3
+    pyinstaller:
+      path: package             # the path for pyinstaller temporary files, related to `stage.path`
+      template:                 # the template to execute pyinstaller
+
+  dist: target                  # the path for dist output, can be a path related to `app.root` or a absolute path

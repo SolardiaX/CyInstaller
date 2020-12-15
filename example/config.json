@@ -1,0 +1,17 @@
+{
+  "DEBUG": true,
+  "PORT": 9000,
+  "SECRET_KEY": "SXfV9dmewIBORva+YaPfxg==",
+  "LOGFILE_PATH": "logs",
+  "PONY": {
+    "provider": "sqlite",
+    "filename": "database.db",
+    "create_db": true
+  },
+  "TEMPLATES_AUTO_RELOAD": true,
+  "JSON_AS_ASCII": false,
+  "SECURITY_TRACKABLE": true,
+  "SECURITY_UNAUTHORIZED_VIEW": "/security/login",
+  "SECURITY_PASSWORD_SALT": "SXfV9dmewIBORva+YaPfxg==$salt$",
+  "PRESERVE_CONTEXT_ON_EXCEPTION": false
+}
