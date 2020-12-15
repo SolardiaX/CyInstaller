@@ -48,7 +48,7 @@ html_theme_options = {
     'master_doc': False,
     'nav_links': [
         {'href': 'index', 'title': 'About', 'internal': True},
-        {'href': 'configration', 'title': 'Configration', 'internal': True},
+        {'href': 'configuration', 'title': 'Configuration', 'internal': True},
         {'href': 'portablesource', 'title': 'PortableSource', 'internal': True},
         {'href': 'modules', 'title': 'Modules', 'internal': True},
     ]

@@ -87,7 +87,7 @@ A yaml configration may looks like:
 
 Detail for each options see the `configration guidelines`_.
 
-.. _configration guidelines: https://github.com/solardiax/cyinstaller/blob/master/docs/CONFIGRATION.rst
+.. _configration guidelines: https://github.com/solardiax/cyinstaller/blob/master/docs/configuration.rst
 
 Links
 -----

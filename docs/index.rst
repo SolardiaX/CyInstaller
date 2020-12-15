@@ -62,7 +62,7 @@ Links
     :maxdepth: 2
     :hidden:
 
-    configration
+    configuration
 
 .. toctree::
     :maxdepth: 2
