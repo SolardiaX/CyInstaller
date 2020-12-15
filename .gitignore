@@ -9,6 +9,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 **/*.egg-info/
+dist/
 
 # Example build package
 build/
