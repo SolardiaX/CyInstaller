@@ -44,7 +44,7 @@ just execute the `CyInstaller` command with it as a parameter.
 
     CyInstaller 'path/to/the/file'
 
-To write the configuration file, please see the :ref:`configration`.
+To write the configuration file, please see the :ref:`configuration`.
 
 -----
 Links

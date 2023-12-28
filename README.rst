@@ -35,7 +35,7 @@ just execute the `CyInstaller` command with it as a parameter.
 Configuration
 -------------
 
-A yaml configration may looks like:
+A yaml configuration may looks like:
 
 .. code-block:: yaml
 

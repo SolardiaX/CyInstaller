@@ -50,7 +50,7 @@ Examples
 .. code-block::
 
     "src/app/server.py"
-    # A file from current working dir or module base, see `root` or `module.base` in configration.
+    # A file from current working dir or module base, see `root` or `module.base` in configuration.
 
     "src/app/**/__init__.py"
     # A python glob pattern which will include all `__init__.py` file in `src/app` and all sub directories.

@@ -38,12 +38,12 @@ For example, if an application sources structure like:
 That means the app has a share module in 'app-root/share', and two modules have separate entries which
 are 'app-root/web/src/server.py' and 'app-root/schedule/src/server.py'.
 
-Now you can use the `modules` option in your `CyInstaller` configration file to package them.
+Now you can use the `modules` option in your `CyInstaller` configuration file to package them.
 
 .. note::
 
   Currently, `CyInstaller` does not support build multi entrypoints in one pipeline.
-  So you need to write configration files for each entrypoints.
+  So you need to write configuration files for each entrypoints.
 
 ---------------------
 Package and Base Path
@@ -61,7 +61,7 @@ name.
       |- src2.py
       |- ...
 
-The configration may looks like:
+The configuration may looks like:
 
 .. code-block:: yaml
 
@@ -91,7 +91,7 @@ documents and unit test etc..
 In this case the package not directly from the base path, and the names also are different, for this
 example the base path name is **Module1** and the package name is **module1**.
 
-The configration can be:
+The configuration can be:
 
 .. code-block:: yaml
 
@@ -120,7 +120,7 @@ Alternatively, you can use :ref:`portablesource` to replace the module define. F
       |- docs
       |- test
 
-With `PortableSource` the configration can be:
+With `PortableSource` the configuration can be:
 
 .. code-block:: yaml
 
