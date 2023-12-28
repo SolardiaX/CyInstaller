@@ -85,9 +85,9 @@ A yaml configration may looks like:
 
       dist: target
 
-Detail for each options see the `configration guidelines`_.
+Detail for each options see the `configuration guidelines`_.
 
-.. _configration guidelines: https://github.com/solardiax/cyinstaller/blob/master/docs/configuration.rst
+.. _configuration guidelines: https://github.com/solardiax/cyinstaller/blob/master/docs/configuration.rst
 
 Links
 -----

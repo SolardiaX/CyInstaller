@@ -1,8 +1,8 @@
 .. _configuration:
 
-============
-Configration
-============
+=============
+Configuration
+=============
 
 --------
 Overview
