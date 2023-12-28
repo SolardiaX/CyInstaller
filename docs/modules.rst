@@ -9,7 +9,7 @@ Overview
 --------
 
 `CyInstaller` supports package multi python modules into one executable file. It's very useful for
-some large or complex application which has multible entrypoint.
+some large or complex application which has multiple entrypoint.
 
 For example, if an application sources structure like:
 
@@ -35,7 +35,7 @@ For example, if an application sources structure like:
       |- docs
       |- test
 
-That means the app has a share module in 'app-root/share', and two modules have seperate entries which
+That means the app has a share module in 'app-root/share', and two modules have separate entries which
 are 'app-root/web/src/server.py' and 'app-root/schedule/src/server.py'.
 
 Now you can use the `modules` option in your `CyInstaller` configration file to package them.

@@ -1,4 +1,4 @@
-.. _configration:
+.. _configuration:
 
 ============
 Configration
@@ -8,7 +8,7 @@ Configration
 Overview
 --------
 
-CyInstaller use yaml file (default is `setup.yml`) as configration.
+CyInstaller use yaml file (default is `setup.yml`) as configuration.
 
 The config file may looks like:
 
@@ -110,7 +110,7 @@ Detail of Options
 |                           |                | See :ref:`portablesource`.                                              |
 +---------------------------+----------------+-------------------------------------------------------------------------+
 | compiles                  | list           | The global source files for `Cython` to compile,                        |
-|                           |                | the fiels can be python scripts or any others can be supported.         |
+|                           |                | the fields can be python scripts or any others can be supported.         |
 |                           |                |                                                                         |
 |                           |                | See :ref:`portablesource`.                                              |
 +---------------------------+----------------+-------------------------------------------------------------------------+
@@ -153,7 +153,7 @@ Detail of Options
 |                           |                | Default is **_build**.                                                  |
 +---------------------------+----------------+-------------------------------------------------------------------------+
 | stage.debug               | str            | whether enable or disable debug.                                        |
-|                           |                | if true all prcoess files will remained for debug.                      |
+|                           |                | if true all process files will remained for debug.                      |
 |                           |                |                                                                         |
 |                           |                | Default is **true**.                                                    |
 +---------------------------+----------------+-------------------------------------------------------------------------+

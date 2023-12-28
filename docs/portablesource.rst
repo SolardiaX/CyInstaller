@@ -8,16 +8,16 @@ PortableSource
 Overview
 --------
 
-`Cython` and `PyInstaller` support related or absoluted file, but they have some diffrent to deal with the files.
+`Cython` and `PyInstaller` support related or absolute file, but they have some different to deal with the files.
 
 For example, `CyInstaller` use `Cython`'s `cythonize api`_ to compile sources, the method can take two arguments,
-`module_list` and `exlcude` which support glob pattern.
+`module_list` and `exclude` which support glob pattern.
 
-Similarly, when execute `PyInstaller` to package your application, the `datas` and `binaries` paramters must be a
+Similarly, when execute `PyInstaller` to package your application, the `datas` and `binaries` parameters must be a
 tuple list, each tuple has two element, the source and the mapping dist path. See `PyInstaller` document
 `Adding files to the bundle`_.
 
-`CyInstaller` use a string expression `PortableSource` to handle those files whether they are related or absoluted
+`CyInstaller` use a string expression `PortableSource` to handle those files whether they are related or absolute
 or even need to be excluded. It's looks like:
 
 .. code-block::

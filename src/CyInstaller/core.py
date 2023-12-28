@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 
 """
-    cyinstall.core
+    cyinstaller.core
     ~~~~~~~~~~~~~~~~~~~
      The core methods of CyInstaller
-    
-    :copyright: (c) 2019 by DreamEx Works.
-    :license: GPL-3.0, see LICENSE for more details.
 """
 
 import json

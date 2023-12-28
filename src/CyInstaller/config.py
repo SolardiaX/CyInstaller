@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 
 """
-    cyinstall.config
+    cyinstaller.config
     ~~~~~~~~~~~~~~~~~~~
      The custom config loader of CyInstaller
-
-    :copyright: (c) 2019 by DreamEx Works.
-    :license: GPL-3.0, see LICENSE for more details.
 """
 
 import os
@@ -71,7 +68,7 @@ def merge_dict(src: dict, default: dict):
             else:
                 v.append(v)
             dist[k] = v
-        elif type(v) != type(t):
+        elif type(v) is not type(t):
             raise ValueError('Config %s value type error.' % k)
 
     for k, v in default.items():

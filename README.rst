@@ -30,7 +30,7 @@ just execute the `CyInstaller` command with it as a parameter.
 
 .. code-block:: text
 
-    CyInstaller 'path/to/the/file'
+    CyInstaller --file 'path/to/the/file'
 
 Configuration
 -------------

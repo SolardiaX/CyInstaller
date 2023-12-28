@@ -4,9 +4,6 @@
     CyInstaller.log
     ~~~~~~~~~~~~~~~~~~~
     Log of CyInstaller
-    
-    :copyright: (c) 2019 by DreamEx Works.
-    :license: GPL-3.0, see LICENSE for more details.
 """
 
 import logging
