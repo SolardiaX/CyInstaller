@@ -23,7 +23,7 @@ Add a `setup.yml` in your project, then execute the `CyInstaller` cli command:
 
 .. code-block:: text
 
-    CyInstaller
+    CyInstaller --file setup.yml
 
 CyInstaller default use `setup.yml` as the config file. If use another file,
 just execute the `CyInstaller` command with it as a parameter.
