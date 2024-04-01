@@ -208,7 +208,7 @@ class SourceList:
 
 class ModuleConfig:
     def __init__(self, config: dict) -> None:
-        self._base = Path(config.get('base', None))
+        self._base = Path(config.get('base', "."))
         self._package = config.get('package', None)
         self._package_from_base = config.get('package_from_base', True)
 
@@ -220,6 +220,8 @@ class ModuleConfig:
 
         if not self._package_from_base:
             self._packagebase = self._base.joinpath(self._package)
+        else:
+            self._packagebase = self._base
 
         self._compiles = SourceList(
             [PortableSource(x, self._packagebase, self._package) for x in config.get('compiles') or []])

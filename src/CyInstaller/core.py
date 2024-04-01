@@ -130,7 +130,7 @@ def build(yaml_file='setup.yml'):
     dist_path = Path(root_dir).joinpath(config.dist)
     if dist_path.exists():
         rmtree(dist_path)
-
+    
     # run cython build
     c_options = {
         'sources': config.compiles.raw_includes,
