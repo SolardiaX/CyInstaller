@@ -10,7 +10,7 @@ setup(
     name="CyInstaller",
     version=version,
     install_requires=[
-        "python>=3.8,<3.13"
+        "python>=3.8,<3.13",
         "click>=8.1.7",
         "cython>=3.0.10",
         "pyinstaller>=6.5.0",
