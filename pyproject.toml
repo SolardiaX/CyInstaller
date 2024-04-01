@@ -31,11 +31,11 @@ include = [
 [tool.poetry.dependencies]
 python = ">=3.8,<3.13"
 click = "^8.1.7"
-Cython = "^3.0.7"
-pyinstaller = "^5.13.2"
+Cython = "^3.0.10"
+pyinstaller = "^6.5.0"
 PyYAML = "^6.0.1"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.example.dependencies]
 bcrypt = "^4.1.2"
 cryptography = "^41.0.7"
 email-validator = "^2.1.0.post1"
@@ -44,14 +44,17 @@ flask-security-too = "^5.3.2"
 pony = "^0.7.17"
 waitress = "^2.1.2"
 python-dotenv = "^1.0.0"
+
+[tool.poetry.scripts]
+CyInstaller = "CyInstaller.__main__:build_command"
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "^69.2.0"
 packaging = "^23.2"
 sphinx = "^7.1.2"
 sphinx-issues = "^3.0.1"
 sphinx-material = "^0.0.35"
 sphinxcontrib-log-cabinet = "^1.0.1"
-
-[tool.poetry.scripts]
-CyInstaller = "CyInstaller.__main__:build_command"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "setuptools", "wheel"]
